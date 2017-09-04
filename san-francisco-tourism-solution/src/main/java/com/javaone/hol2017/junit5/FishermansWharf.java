@@ -21,5 +21,4 @@ public class FishermansWharf {
 	public Optional<SeaLion> getOldestSeaLion() {
 		return seaLions.stream().max((s1, s2) -> s1.getAge() - s2.getAge());
 	}
-
 }
