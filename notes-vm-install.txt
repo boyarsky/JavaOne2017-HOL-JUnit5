@@ -13,6 +13,7 @@ IntelliJ Community Edition (64 bit)
 - imported lab project from git local directory (created by eclipse) and configured using same JDK as configured for Eclipse
 - ran junit tests
 - ran maven build
+(this doesn’t let you pull from within IntellIJ. Which is fine because can pull on command line in one place for any editor)
 
 Git Bash
 - default install
