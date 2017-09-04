@@ -3,6 +3,7 @@ Oracle requires a Virtual Box VM image for the lab environment. They supply a st
 Eclipse 64 bit Oxygen
 - pointed workspace preferences to JDK instead of JRE
 - created workspace
+- set workspace to open by default
 - connected workspace to this repo
 - pulled in two Maven projects from this repo
 - installed JUnit 5 update/support for Oxygen
@@ -23,3 +24,7 @@ Maven 3.5.0
 - added c:\users\lab\apache-maven-3.5.0\bin to user path environment variable
 - delete entry from local repo and ran build at command line to ensure worked
 
+Edge browsers
+- open this repository and junit 5 guide in tabs
+- pin each to start menu as tiles
+- set these two tabs to home page for Edge
