@@ -1,0 +1,24 @@
+Oracle requires a Virtual Box VM image for the lab environment. They supply a starter one. In addition to that, I installed
+
+Eclipse 64 bit Oxygen
+- pointed workspace preferences to JDK instead of JRE
+- created workspace
+- connected workspace to this repo
+- pulled in two Maven projects from this repo
+- installed JUnit 5 update/support for Oxygen
+- ran Maven build to ensure works (and so all/most required dependencies are cached in local repository)
+- deleted solutions project so not in workspace
+
+IntelliJ Community Edition (64 bit)
+- imported lab project from git local directory (created by eclipse) and configured using same JDK as configured for Eclipse
+- ran junit tests
+- ran maven build
+
+Git Bash
+- default install
+
+Maven 3.5.0
+- unzipped under c:\users\lab
+- added c:\users\lab\apache-maven-3.5.0\bin to user path environment variable
+- delete entry from local repo and ran build at command line to ensure worked
+
