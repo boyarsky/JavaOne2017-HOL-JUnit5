@@ -33,5 +33,10 @@
 			<version>${hamcrest.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.jboss.forge.addon</groupId>
+			<artifactId>assertj</artifactId>
+			<version>3.6.2</version>
+		</dependency>
 	</dependencies>
 </project>
