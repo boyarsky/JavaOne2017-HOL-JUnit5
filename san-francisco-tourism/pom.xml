@@ -7,6 +7,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<hamcrest.version>1.3</hamcrest.version>
+		<mockito.version>2.9.0</mockito.version>
 	</properties>
 	<build>
 		<plugins>
@@ -32,6 +33,11 @@
 			<artifactId>hamcrest-all</artifactId>
 			<version>${hamcrest.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.forge.addon</groupId>
