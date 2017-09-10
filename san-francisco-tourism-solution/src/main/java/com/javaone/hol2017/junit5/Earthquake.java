@@ -16,4 +16,13 @@ public class Earthquake {
 			throw new ShakeException("Wait for the aftershock...");
 		}
 	}
+	
+	// we are impatient, so let's only wait two seconds
+	public void waitForAftershock() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// ignore
+		}
+	}
 }
