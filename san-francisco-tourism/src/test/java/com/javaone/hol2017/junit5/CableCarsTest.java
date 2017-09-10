@@ -7,7 +7,7 @@ import org.junit.*;
 
 public class CableCarsTest {
 
-	@Test @Ignore
+	@Test
 	public void numberLines() {
 		int actual = CableCars.getNumberLines();
 		assertEquals(3, actual);
