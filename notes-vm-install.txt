@@ -35,3 +35,4 @@ Edge browsers
 Desktop
 - Icons for IntelliJ, Eclipse, GitBase, JEdit and shortcut to folder where pulled from git
 - PDF of lab instructions
+- Shortcut to word document instructions in git folder
