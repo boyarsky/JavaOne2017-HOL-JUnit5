@@ -31,3 +31,7 @@ Edge browsers
 - open this repository and junit 5 guide in tabs
 - pin each to start menu as tiles
 - set these two tabs to home page for Edge
+
+Desktop
+- Icons for IntelliJ, Eclipse, GitBase, JEdit and shortcut to folder where pulled from git
+- PDF of lab instructions
