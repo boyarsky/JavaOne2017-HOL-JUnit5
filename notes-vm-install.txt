@@ -24,6 +24,9 @@ Maven 3.5.0
 - added c:\users\lab\apache-maven-3.5.0\bin to user path environment variable
 - delete entry from local repo and ran build at command line to ensure worked
 
+JEdit
+- installed
+
 Edge browsers
 - open this repository and junit 5 guide in tabs
 - pin each to start menu as tiles
