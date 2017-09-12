@@ -1,9 +1,9 @@
 package com.javaone.hol2017.junit5;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 import java.time.*;
-import java.util.*;
 import java.util.stream.*;
 
 import org.junit.jupiter.api.*;
@@ -14,7 +14,7 @@ public class TestFromScratch {
 
 	@BeforeAll
 	static void check() {
-		// assumeTrue(System.getProperty("os.name").contains("Windows"));
+		assumeTrue(System.getProperty("os.name").contains("Windows"));
 	}
 
 	@ParameterizedTest
