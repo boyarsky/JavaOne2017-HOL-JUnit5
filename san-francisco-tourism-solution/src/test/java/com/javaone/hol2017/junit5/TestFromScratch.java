@@ -14,7 +14,7 @@ public class TestFromScratch {
 
 	@BeforeAll
 	static void check() {
-		assumeTrue(System.getProperty("os.name").contains("Windows"));
+		assumeTrue(System.getProperty("os.name").contains("Mac"));
 	}
 
 	@ParameterizedTest

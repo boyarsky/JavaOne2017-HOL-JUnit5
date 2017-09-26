@@ -16,10 +16,10 @@ public class CableCarsTest {
 	@Test
 	public void namesOfLines() {
 		SoftAssertions softly = new SoftAssertions();
-		softly.assertThat(CableCars.isLine("California")).isTrue();
-		softly.assertThat(CableCars.isLine("Powell-Hyde")).isTrue();
-		softly.assertThat(CableCars.isLine("Powell-Mason")).isTrue();
-		softly.assertThat(CableCars.isLine("San Franciso")).isFalse();
+		softly.assertThat(CableCars.isLine("California")).isTrue().as("California");
+		softly.assertThat(CableCars.isLine("Powell-Hyde")).isTrue().as("Powell-Hyde");
+		softly.assertThat(CableCars.isLine("Powell-Mason")).isTrue().as("Powell-Mason");
+		softly.assertThat(CableCars.isLine("San Francisco")).isFalse().as("San Francisco");
 		softly.assertAll();
 	}
 
