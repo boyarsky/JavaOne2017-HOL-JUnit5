@@ -18,10 +18,10 @@ public class CableCarsTest {
 	public void namesOfLines() {
 
 		assertAll("lines",
-				() -> assertTrue(CableCars.isLine("California")),
-				() -> assertTrue(CableCars.isLine("Powell-Hyde")),
-				() -> assertTrue(CableCars.isLine("Powell-Mason")),
-				() -> assertFalse(CableCars.isLine("San Franciso"))
+				() -> assertTrue(CableCars.isLine("California"), "California"),
+				() -> assertTrue(CableCars.isLine("Powell-Hyde"), "Powell-Hyde"),
+				() -> assertTrue(CableCars.isLine("Powell-Mason"), "Powell-Mason"),
+				() -> assertFalse(CableCars.isLine("San Francisco"), "San Francisco")
 
 		);
 	}
