@@ -1,44 +1,47 @@
 package com.javaone.hol2017.junit5;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.Matchers.*;
-import org.junit.*;
-import org.junit.rules.*;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
-import com.javaone.hol2017.junit5.Earthquake.*;
+import com.javaone.hol2017.junit5.Earthquake.ShakeException;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.failBecauseExceptionWasNotThrown;
 
 public class EarthquakeTest {
 
-	@Rule
-	public ExpectedException expected = ExpectedException.none();
+  @Rule
+  public ExpectedException expected = ExpectedException.none();
 
-	private Earthquake earthquake;
+  private Earthquake earthquake;
 
-	@Before
-	public void setUp() {
-		earthquake = new Earthquake();
-	}
+  @Before
+  public void setUp() {
+    earthquake = new Earthquake();
+  }
 
-	@Test(expected = ShakeException.class)
-	public void noMessageChecking() {
-		earthquake.shake(true);
-	}
+  @Test(expected = ShakeException.class)
+  public void noMessageChecking() {
+    earthquake.shake(true);
+  }
 
-	@Test
-	public void usingRule() {
-		expected.expect(ShakeException.class);
-		expected.expectMessage("Wait for the aftershock");
-		earthquake.shake(true);
-	}
+  @Test
+  public void usingRule() {
+    expected.expect(Earthquake.ShakeException.class);
+    expected.expectMessage("Wait for the aftershock");
+    earthquake.shake(true);
+  }
 
-	@Test
-	public void usingStandalone() {
-		try {
-			earthquake.shake(true);
-			fail("should throw exception");
-		} catch (ShakeException e) {
-			assertThat(e.getMessage(), containsString("Wait for the aftershock"));
-		}
-	}
-
+  @Test
+  public void usingStandalone() {
+    try {
+      earthquake.shake(true);
+      failBecauseExceptionWasNotThrown(Earthquake.ShakeException.class);
+    }
+    catch (Earthquake.ShakeException e) {
+      assertThat(e.getMessage()).contains("Wait for the aftershock");
+    }
+  }
 }

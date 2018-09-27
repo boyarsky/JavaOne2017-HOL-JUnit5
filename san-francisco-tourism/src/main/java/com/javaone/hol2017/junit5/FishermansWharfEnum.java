@@ -1,17 +1,17 @@
 package com.javaone.hol2017.junit5;
 
-import java.time.*;
+import java.time.LocalTime;
 
 public enum FishermansWharfEnum {
-	STORES(22), RESTAURANTS(23), FOOD_CARTS(21);
+  STORES(22), RESTAURANTS(23), FOOD_CARTS(21);
 
-	private LocalTime closing;
+  private LocalTime closing;
 
-	FishermansWharfEnum(int closingHour) {
-		closing = LocalTime.of(closingHour, 0);
-	}
+  FishermansWharfEnum(int closingHour) {
+    closing = LocalTime.of(closingHour, 0);
+  }
 
-	public LocalTime closes() {
-		return closing;
-	}
+  public LocalTime closes() {
+    return closing;
+  }
 }

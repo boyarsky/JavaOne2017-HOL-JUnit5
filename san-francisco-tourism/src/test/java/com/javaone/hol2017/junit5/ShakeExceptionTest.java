@@ -1,18 +1,20 @@
 package com.javaone.hol2017.junit5;
 
-import static org.junit.Assert.*;
+import org.junit.Ignore;
+import org.junit.Test;
 
-import org.junit.*;
+import com.javaone.hol2017.junit5.Earthquake.ShakeException;
 
-import com.javaone.hol2017.junit5.Earthquake.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ShakeExceptionTest {
 
-	@Test @Ignore("this test is ignored becuase it is unnecessary")
-	public void message() {
-		String expected = "message";
-		ShakeException actual = new ShakeException(expected);
-		assertEquals(expected, actual.getMessage());
-	}
+  @Ignore("this test execution has been disabled because it is unnecessary")
+  @Test
+  public void message() {
+    String expected = "message";
+    ShakeException actual = new ShakeException(expected);
 
+    assertThat(actual.getMessage()).isEqualTo(expected);
+  }
 }
